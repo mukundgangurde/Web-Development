@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tables in HTML</h1>
+    <table>
+        <caption>This is Caption</caption>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2>colspan & rowspan in table Example</h2>
+    <table>
+        <caption>This is Caption</caption>
+        <thead>
+            <tr>
+                <th colspan="2">Header  A & B - colspan="2"</th>
+                <th>Header C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row A, Cell 1</td>
+                <td>Row A, Cell 2</td>
+                <td rowspan="2">Row A & B, Cell 3 - rowspan="2"</td>
+            </tr>
+            <tr>
+                <td>Row B, Cell 1</td>
+                <td>Row B, Cell 2</td>
+                <!-- <td>Row B, Cell 3</td> -->
+            </tr>
+        </tbody>
+</body>
+
+</html>

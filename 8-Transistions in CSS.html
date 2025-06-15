@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transistions in CSS</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #transition {
+            color: orange;
+            background-color: bisque;
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid black;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+            /* Transition shorthand property */
+            /* transition: property-name|duration|timing-function|delay; */
+            transition: all 1s linear 0.2s;
+        }
+
+        #transition:hover{
+            background-color: orange;
+            color: white;
+            font-size: 20px;
+            
+        }
+        #transition:active {
+            background-color: orangered;
+            color: white;
+        }
+
+        .transform {
+            height: 100px;
+            width: 100px;
+            background-color: bisque;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid black;
+            /* transition-property: all; */
+            transition: all 1s ease-in 0.5s;
+        }
+
+        #rotate:hover {
+            background-color: aqua;
+            transform: rotate(180deg);
+        }
+        #rotate:active {
+            background-color:lawngreen;
+            transform: rotateZ(360deg);
+        }
+
+        #scale:hover {
+            background-color: cadetblue;
+            transform: scale(1.1,1.4);
+        }
+        #translate:hover {
+            transform: translate(20px,-20px);
+        }
+
+        #skew:hover {
+            transform: skew(30deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transitions, Transform in CSS</h1>
+    <div id="container">
+        <div id="transition">Ram Ram! using Transition</div>
+        <div id="rotate" class="transform">Transforming Rotate</div>
+        <div id="scale" class="transform">Transforming Scale</div>
+        <div id="translate" class="transform">Transforming Translate</div>
+        <div id="skew" class="transform">Transforming Skew - Stretch</div>
+    </div>
+</body>
+</html>

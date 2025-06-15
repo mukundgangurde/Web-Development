@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in CSS</title>
+    <style>
+        #animation {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #container1 {
+            background-color: bisque;
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid black;
+            animation: blink 0.5s 0.5s ease-in infinite;
+
+        }
+
+        #container2 {
+            background-color: aqua;
+            position: relative;
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+            border: 1px solid black;
+            animation: move 1s 0.5s ease-in infinite alternate;
+        }
+
+        #loader {
+            /* position: relative; */
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 10px solid #fff95b;
+            border-top: 10px solid #ff930f ;
+            animation: spin 1s 0.5s ease-in infinite normal;
+        }
+
+        @keyframes blink {
+            from {
+                background-color: bisque;
+            }
+
+            to {
+                background-color: orange;
+            }
+        }
+
+        @keyframes move {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 20px;
+            }
+        }
+
+        @keyframes spin {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Animations in CSS</h1>
+    <div id="animation">
+        <div id="container1">Hare Krishna!</div>
+        <div id="container2"><u>Direction</u> - <br> normal <br> reverse <br> alterante <br> alternate-re</div>
+        <div id="loader"></div>
+    </div>
+
+</body>
+
+</html>

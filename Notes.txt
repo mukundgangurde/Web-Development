@@ -1,0 +1,215 @@
+DAY 1 & 2
+
+Froala - Online Text Editor
+Ultra Edit - Paid - Professional 
+VS Code - {ye nahi mahit tar ...... }
+
+HTML (Hyper Text MArkup Language) - STRUCTURE
+CSS (Cascading Style Sheet) - DESIGN
+JS (Javascript) - LOGIC 
+
+HTML is used to design structure of web page
+The component used to design are called Tags
+
+HTML Tags - Container for some content or other Tags
+?Types of Tags - open /closed
+Boiler Plate
+Comments
+Tags are not case-sensitive
+P1 - Portfolio
+
+HTML Attributes
+Heading Tags
+Paragraph Tags
+Block Elements - occupy full width of the page
+Inline Elements - occupy only the width of the content
+Anchor tags - href
+
+Breakline Tag - <br>
+Horizontal Rule Tag - <hr>
+Preformatted Tag - Print as it is without ignoring spaces also <pre></pre>
+Image Tag - src="url/path" alt="Alternative Text" height width
+Bold Tag - </b></b>
+Italic Tag - </i></i>
+Strikethrough Tag - </s></s>
+Underline Tag - </u></u>
+Big Tag - <Big></Big>
+Small tag = <small></small>
+Subscript Tag - <sub></sub>
+Superscript Tag - <sup></sup>
+
+P2 - Create pages : Education, Work Experience, Skills, Projects, Contact
+& link these with your homepages
+
+Semantic Tags - <header>, <footer>, <nav>, <article>, <section>, <aside>
+Non-Semantic Tags - <div>, <span>
+
+section tag: for section on your page <section></section>
+article tag: for article on your page <article></article>
+aside atg: for aside content like ads, links, etc. <aside></aside>
+nav tag: for navigation links <nav></nav>
+
+Opening link in new tab using target main in anchor tag - 
+<a href="url/path" target="_main">Link Text</a>
+
+div tag - non-semantic tag for block container <div></div>
+span tag - non-semantic tag for inline container <span></span>
+
+List in HTML
+Unordered List - <ul></ul>
+
+Ordered List - <ol></ol>
+Definition List - <dl></dl>
+List Item - <li></li>
+Nested Lists - Lists within lists
+
+Tables in HTML
+Table Tag - <table></table>
+Table Row Tag - <tr></tr>
+Table Header Tag - <th></th>
+Table Data Tag - <td></td>
+caption Tag - <caption></caption>
+
+Layout:
+<table>
+    <thead></thead>
+    <tbody></tbody>
+</table>
+
+Forms in HTML:
+<form action="where the data goes"></form>
+<input type="" palceholder="">
+<textarea></textarea>
+<label for="id"></label>
+<select>
+    <option value=""></option>
+</select>
+
+Classes & Id's
+
+To use website inside a website we use iframe tag - <iframe src="url"></iframe>
+video tag <video src="url"></video>
+
+
+DAY 3
+
+CSS is style for HTML doc
+Types : Inline, Internal, External.
+
+Syntax:
+selector {
+    property : value;
+}
+
+Selctors: 
+Universal: * {}
+Element: h1 {}
+Id selector: #myid {}
+Class selector: .myclass {}
+
+
+property
+- color : Set the foreground color
+- background-color : Set the background color
+- text-align : left / right / center
+- text-decoration : underline / overline / line-through / none (for hiding link)
+- font-weight : normal / bold / bolder / lighter / 100-900
+- font-family : font,font,font
+- line-height : space between lines
+- text-transform : uppercase / lowercase / capitalize / none
+- border : 1px solid red
+- border-radius : to make corner rounded
+- padding : top right bottom left -> clockwise
+- margin : top right bottom left -> clockwise
+- display : inline / block / inline-block / none
+- visibility : hidden
+- position : static / relative / absolute / fixed / sticky
+- z-index : Decides stack levels -n / 0 / +n
+- background-image : url("image.jpg");
+- background-size : cover / contain / auto
+
+
+pixels : 96px = 1 inch
+% browser display %
+em : relative to the font size of parent in text & in width its relative to teh Element itself
+rem : realtive to fontsize of root Element
+vh , vw : viewport-height, viewport-width
+
+Color System:
+RGB(0,0,0) : Set value 0-255 for all red,green,blue.
+#ffffff : 6 digit Hexadecimal value for each color
+Its similar to RGB 0-255 in hex 00-ff 
+RGB(0,0,0)      #__ __ __for RGB
+
+Alpha channel : RGBA (r,g,b,opacity) where opacity is 0-1
+
+DAY 4
+|FLexbox:
+One dimensional layout for arranging items in rows or columns
+display : flex
+flex container, flex items
+horizontal direction : main axis
+vertical direction : cross axis
+
+flex-direction : row / row-reverse / column / column-reverse
+justify-content : alignment along the main axis.
+- flex-start / flex-end / centre / space-evenly / space-around / space-between
+flex-wrap : nowrap / wrap / wrap-reverse
+align-items : alignment along the cross axis.
+align-content : alignment of space between & around the content along cross-axis
+
+Flex item properties
+align-self : alignment of individual along the cross axis.
+flex-grow : how much a flex item will grow relative to the rest of the flex items if space is available
+flex-shrink : how much a flex item will shrink relative to the rest of the flex items if space is available
+
+|@media
+min-width, max-width
+Use of "and" for using range
+
+|CSS Transitions Properties:
+Used to define the how one element changes means transition from one state to another.
+transition-property: property you want to change as font-size, width,etc
+transition-duration: 2s/5ms means timing 
+transition-timing-function: ease-in/ease-out/linear/steps
+transition-delay: 3s/ same timing only
+
+Transition shorthand property
+transition: property-name|duration|timing-function|delay;
+
+One imp thing is state of element to perform action : hover/active,etc
+
+
+|CSS Transform:
+for applying 2D/3D transformation
+
+Rotate: transform: rotate(45deg);
+rotate/rotateX/rotateY/rotateZ
+
+Scale: To change size 
+transform: scale(x,y) / scale(x&y)
+
+translate: to move
+translate: translate(x&y) / translate(x,y) / translateX(x) / translateY(y)
+
+skew: to stretch it from top & bottom side corners by skew(50deg)
+
+|@keyframes animation-name {
+    from {property: value;}
+    to {property:value;}
+}
+
+@keyframes animation-name {
+    0% {} 
+    50% {}
+    100% {}
+}
+
+|Animation Properties:
+animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count: how many times does my animations apply
+animation-direction: normal(from>to) / reverse(from<to) / alternate(from>to>from>to) / alternate-re(from<to<from<to)
+animation: name duration timing-function delay iteration-count direction fill-mode;

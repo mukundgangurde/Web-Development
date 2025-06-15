@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 10px;
+            text-align: center;
+        }
+
+        #container {
+            display: flex;
+            background-color: skyblue;
+            margin: 10px;
+            height: 400px;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            /* shorthand for flex-direction & flex wrap */
+            flex-flow: row wrap;
+            justify-content: center;    /* For Aligning Items Horizontally */
+            align-items: center;        /* For Aligning universally all Items Vertically */
+            /* changed to show the effect of align-self */
+            align-content: cener;      /* For Aligning Flex-lines */
+        }
+
+        .item {
+            background-color: lightgray;
+            margin: 10px;
+            padding: 30px;
+        }
+
+        #item1, #item3 {
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 50px; 
+            align-self: flex-end; /* For Aligning indidual Items Vertically */
+        }
+
+    </style>
+</head>
+<body>
+    <u><h1>Learn Flexbox</h1></u>
+    <div id="container">
+        <div id="item1" class="item">Item 0</div>
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div id="item3" class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+    </div>
+</body>
+</html>
